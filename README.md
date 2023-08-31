@@ -38,7 +38,7 @@ Before domain users can utilize the client computer, Remote Desktop needs to be 
 
 ![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/03dfc1ca-a17e-4d82-bde8-ccfd9b714519)
 
-Users can be created by manual means or through a script. In this lab, a PowerShell script will be used, which is available here. On the domain controller, open PowerShell ISE with administrative privileges (ensuring you're logged in as an admin on the domain controller). Generate a new file, insert the script into the ISE console, execute the script, and observe the accounts coming into existence.
+Users can be created by manual means or through a script. In this lab, a PowerShell script will be used, which is available <a href=https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1> here. </a> On the domain controller, open PowerShell ISE with administrative privileges (ensuring you're logged in as an admin on the domain controller). Generate a new file, insert the script into the ISE console, execute the script, and observe the accounts coming into existence.
 
 ![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/fb0edba4-4a45-4cfe-8cad-3e840820f107)
 ![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/63cae4a7-931a-4eca-a91c-d6a73cf95ae7)
