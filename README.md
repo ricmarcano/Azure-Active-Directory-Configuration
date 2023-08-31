@@ -32,3 +32,13 @@ Before Client-1 can join the domain, the DNS settings have to be set up correctl
 Let's have the client VM join the domain now. In the client VM's System menu, choose "Rename this PC (advanced)" > "Change." Enter the domain and the required credentials to let the client join the domain. I'm using Rick James' login for this lab. Remember, the login details need to be entered within the domain context (testdomain.com\rick_admin). After this, the client should be successfully added to the domain. On the domain controller, you should now see the client listed under Computers in the Active Directory Users and Computers panel.
 
 ![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/e703de5c-5dd8-42d2-8ecc-969a82b85b23)
+![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/e95a9934-b541-4bf9-b716-70adcdd55f00)
+
+Before domain users can utilize the client computer, Remote Desktop needs to be enabled for non-admin users. While logged in as the administrator (in my case, Rick), open System Properties > Access Remote Desktop > choose users permitted to access this PC remotely > grant Remote Desktop access to Domain Users. Now, non-admin users can log in to Client-1 remotely. Usually, a Group Policy can achieve this across multiple systems, but for this lab, we're not using a Group Policy to make this change.
+
+![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/03dfc1ca-a17e-4d82-bde8-ccfd9b714519)
+
+Users can be created by manual means or through a script. In this lab, a PowerShell script will be used, which is available here. On the domain controller, open PowerShell ISE with administrative privileges (ensuring you're logged in as an admin on the domain controller). Generate a new file, insert the script into the ISE console, execute the script, and observe the accounts coming into existence.
+
+![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/fb0edba4-4a45-4cfe-8cad-3e840820f107)
+![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/63cae4a7-931a-4eca-a91c-d6a73cf95ae7)
