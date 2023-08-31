@@ -42,3 +42,8 @@ Users can be created by manual means or through a script. In this lab, a PowerSh
 
 ![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/fb0edba4-4a45-4cfe-8cad-3e840820f107)
 ![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/63cae4a7-931a-4eca-a91c-d6a73cf95ae7)
+
+Following the user creation, you can now log in to Client-1 using one of the newly generated user accounts from the PowerShell script. Select a username and effortlessly log in to the client with the domain context. For my scenario, it would be testdomain.com\bara.jijil.
+
+![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/72f24f98-6af4-4ad0-9e94-9c6a21a903c9)
+![image](https://github.com/ricmarcano/Azure-Active-Directory-Configuration/assets/141169092/9503b32d-0085-4631-9a75-e5e0242be52f)
